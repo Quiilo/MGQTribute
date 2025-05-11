@@ -1,0 +1,2 @@
+# MGQTribute
+PSI projektas pristatymui
