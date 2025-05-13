@@ -8,7 +8,7 @@
     "children":[],
     "name":"Default",
   },
-  "defaultScriptType":0,
+  "defaultScriptType":1,
   "Folders":[
     {"$GMFolder":"","%Name":"Animation Curves","folderPath":"folders/Animation Curves.yy","name":"Animation Curves","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Extensions","folderPath":"folders/Extensions.yy","name":"Extensions","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -35,12 +35,22 @@
   },
   "name":"MGQ Tribute",
   "resources":[
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
+    {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
+    {"id":{"name":"rm_first_enemy","path":"rooms/rm_first_enemy/rm_first_enemy.yy",},},
+    {"id":{"name":"rm_start_patch","path":"rooms/rm_start_patch/rm_start_patch.yy",},},
+    {"id":{"name":"scr_face_macro","path":"scripts/scr_face_macro/scr_face_macro.yy",},},
+    {"id":{"name":"spr_grass_tile","path":"sprites/spr_grass_tile/spr_grass_tile.yy",},},
+    {"id":{"name":"spr_player_left","path":"sprites/spr_player_left/spr_player_left.yy",},},
+    {"id":{"name":"spr_player_right","path":"sprites/spr_player_right/spr_player_right.yy",},},
+    {"id":{"name":"spr_wall","path":"sprites/spr_wall/spr_wall.yy",},},
+    {"id":{"name":"ts_grass_lands","path":"tilesets/ts_grass_lands/ts_grass_lands.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"rm_start_patch","path":"rooms/rm_start_patch/rm_start_patch.yy",},},
+    {"roomId":{"name":"rm_first_enemy","path":"rooms/rm_first_enemy/rm_first_enemy.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
