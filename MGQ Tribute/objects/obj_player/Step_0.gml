@@ -1,7 +1,7 @@
-right_key = keyboard_check(vk_right);
-left_key = keyboard_check(vk_left);
-up_key = keyboard_check(vk_up);
-down_key = keyboard_check(vk_down);
+var right_key = keyboard_check(vk_right);
+var left_key = keyboard_check(vk_left);
+var up_key = keyboard_check(vk_up);
+var down_key = keyboard_check(vk_down);
 
 
 //movement code
@@ -9,10 +9,12 @@ xspd = (right_key - left_key) * mov_spd;
 yspd = (down_key - up_key) * mov_spd;
 
 //collision code
+
 if place_meeting(x + xspd, y, obj_wall) == true
 {
   xspd = 0;	
 }
+
 if place_meeting(x, y + yspd, obj_wall) == true
 {
   yspd = 0;	
