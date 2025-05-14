@@ -1,6 +1,6 @@
 {
   "$GMSprite":"",
-  "%Name":"sTurnIndicator",
+  "%Name":"spr_turn_indicator",
   "bboxMode":0,
   "bbox_bottom":23,
   "bbox_left":1,
@@ -21,7 +21,7 @@
   "layers":[
     {"$GMImageLayer":"","%Name":"b981e1dc-7071-4623-9f1c-f2a84708df61","blendMode":0,"displayName":"default","isLocked":false,"name":"b981e1dc-7071-4623-9f1c-f2a84708df61","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"sTurnIndicator",
+  "name":"spr_turn_indicator",
   "nineSlice":null,
   "origin":9,
   "parent":{
@@ -33,7 +33,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"v1",
-    "%Name":"sTurnIndicator",
+    "%Name":"spr_turn_indicator",
     "autoRecord":true,
     "backdropHeight":1080,
     "backdropImageOpacity":0.5,
@@ -57,7 +57,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"sTurnIndicator",
+    "name":"spr_turn_indicator",
     "playback":1,
     "playbackSpeed":15.0,
     "playbackSpeedType":0,
@@ -71,7 +71,7 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"ea5d2c84-7392-44eb-a73b-6914c921df9a","path":"sprites/sTurnIndicator/sTurnIndicator.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"ea5d2c84-7392-44eb-a73b-6914c921df9a","path":"sprites/spr_turn_indicator/spr_turn_indicator.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"9c71b51f-961c-4321-88da-5b9bfe0368af","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
