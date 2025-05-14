@@ -1,4 +1,4 @@
-/*global.party =
+global.party =
 [
     {
 	  name: "Questy",
@@ -7,7 +7,7 @@
 	  mp: 5,
 	  mpMax: 5,
 	  strength: 5,
-	  sprites: {idle: spr_questy_idle, attack: spr_questy_attack},
+	  sprites: {idle: spr_player_right, attack: spr_player_attack},
 	  actions : []
 		
 	}
@@ -24,7 +24,7 @@ global.enemies =
 	mp: 0,
 	mpMax: 0,
 	strength: 2,
-	sprites: {idle: spr_slime_idle, attack: spr_slime_attack},
+	sprites: {idle: spr_slime, attack: spr_slime_attack},
 	actions: [],
 	xpValue: 15,
 	AIScript: function()
@@ -34,4 +34,3 @@ global.enemies =
 	
    }
 }
-*/

@@ -1,0 +1,1 @@
+NewEncounter([global.enemies.Slime, global.enemies.Slime], spr_bg_field);
