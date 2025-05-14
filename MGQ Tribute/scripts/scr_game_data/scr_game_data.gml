@@ -1,4 +1,4 @@
-global.party =
+/*global.party =
 [
     {
 	  name: "Questy",
@@ -34,3 +34,4 @@ global.enemies =
 	
    }
 }
+*/
