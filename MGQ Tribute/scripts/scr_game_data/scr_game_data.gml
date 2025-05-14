@@ -1,9 +1,41 @@
+global.actionLibrary = 
+{
+	attack:
+	{
+	  name: "Attack",
+	  description: "{0} attacks!",
+	  subMenu: -1,
+	  targetRequired: true,
+	  targetEnemyByDefault: true,
+	  targetAll: MODE.NEVER,
+	  userAnimation : "attack",
+	  effectSprite : spr_attack_bonk,
+	  effectOnTarget: MODE.ALWAYS,
+	  func: function(_user, _targets)
+	  {
+		var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+		with (_targets[0]) hp = max(0, hp - _damage);
+	  }
+	  
+	}
+	
+}
+
+enum MODE
+{
+  NEVER = 0,
+  ALWAYS = 1,
+  VARIES = 2
+}
+
+
+
 global.party =
 [
     {
 	  name: "Questy",
-	  hp: 10,
-	  hpMax: 10,
+	  hp: 20,
+	  hpMax: 20,
 	  mp: 5,
 	  mpMax: 5,
 	  strength: 5,
