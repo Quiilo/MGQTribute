@@ -48,6 +48,7 @@
     {"id":{"name":"obj_battle_effect","path":"objects/obj_battle_effect/obj_battle_effect.yy",},},
     {"id":{"name":"obj_battle_floating_text","path":"objects/obj_battle_floating_text/obj_battle_floating_text.yy",},},
     {"id":{"name":"obj_battle_menu","path":"objects/obj_battle_menu/obj_battle_menu.yy",},},
+    {"id":{"name":"obj_battle_transition","path":"objects/obj_battle_transition/obj_battle_transition.yy",},},
     {"id":{"name":"obj_battle_units","path":"objects/obj_battle_units/obj_battle_units.yy",},},
     {"id":{"name":"obj_battle_unitsEnemy","path":"objects/obj_battle_unitsEnemy/obj_battle_unitsEnemy.yy",},},
     {"id":{"name":"obj_battle_unitsPC","path":"objects/obj_battle_unitsPC/obj_battle_unitsPC.yy",},},

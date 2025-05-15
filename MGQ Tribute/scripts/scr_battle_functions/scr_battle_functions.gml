@@ -34,3 +34,19 @@ function BattleChangeHP(_target, _amount, _AliveDeadOrEither = 0)
    );
    if (!_failed) _target.hp = clamp(_target.hp + _amount, 0, _target.hpMax);
 }
+function BattleChangeMP(_target, _amount,  _AliveDeadOrEither = 0)
+{
+	// if = 0 alive, 1 = dead,  2 = either
+   var _failed = false;
+   if (_AliveDeadOrEither == 0) && (_target.mp <= 0) _failed = true;
+   if (_AliveDeadOrEither == 1) && (_target.mp > 0) _failed = true;
+   
+   var _col = c_white;
+   if (_amount > 0) _col = c_lime;
+   if (_failed)
+   {
+	 _col = c_white;
+	 _amount = "failed";
+   }
+   if (!_failed) _target.mp = clamp(_target.mp + _amount, 0, _target.mpMax);
+}

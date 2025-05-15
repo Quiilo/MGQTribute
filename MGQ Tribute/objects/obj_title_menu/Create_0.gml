@@ -15,7 +15,8 @@ options[0, 2] = "Quit Game";
 options[1, 0] = "Window Size";
 options[1, 1] = "Brightness";
 options[1, 2] = "Controls";
-options[1, 3] = "Back";
+options[1, 3] = "Auto Battle";
+options[1, 4] = "Back";
 
 op_length = array_length(options);
 

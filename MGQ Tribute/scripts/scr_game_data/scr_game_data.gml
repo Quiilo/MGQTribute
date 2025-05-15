@@ -46,14 +46,21 @@ global.actionLibrary =
 	  mpCost: 5,
 	  targetRequired: true,
 	  targetEnemyByDefault: true,
-	  targetAll: MODE.NEVER,
+	  targetAll: MODE.VARIES,
 	  userAnimation : "cast",
 	  effectSprite : spr_magic_fire,
 	  effectOnTarget: MODE.ALWAYS,
 	  func: function(_user, _targets)
 	  {
-		var _damage = irandom_range(10,15);
-		BattleChangeHP(_targets[0], -_damage, 0)
+		//  var _damage = irandom_range(10,15);
+		//BattleChangeHP(_targets[0], -_damage, 0)
+		for (var i = 0; i < array_length(_targets); i++)
+		{
+			var _damage = irandom_range(10,15);
+			if (array_length(_targets) > 1) _damage = ceil(_damage * 0.75);
+			BattleChangeHP(_targets[0], -_damage, 0);
+		}
+		BattleChangeMP(_user, -mpCost);
 	  }
 	}
 	
