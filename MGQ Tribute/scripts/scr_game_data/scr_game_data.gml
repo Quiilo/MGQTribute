@@ -9,7 +9,7 @@ global.actionLibrary =
 	  targetEnemyByDefault: true,
 	  targetAll: MODE.NEVER,
 	  userAnimation : "attack",
-	  effectSprite : spr_attack_bonk,
+	  effectSprite : spr_attack_slash,
 	  effectOnTarget: MODE.ALWAYS,
 	  func: function(_user, _targets)
 	  {
@@ -17,6 +17,44 @@ global.actionLibrary =
 		BattleChangeHP(_targets[0], -_damage, 0)
 	  }
 	  
+	},
+	
+	slime_attack:
+	{
+	  name: "Attack",
+	  description: "{0} bashes you!",
+	  subMenu: -1,
+	  targetRequired: true,
+	  targetEnemyByDefault: true,
+	  targetAll: MODE.NEVER,
+	  userAnimation : "attack",
+	  effectSprite : spr_attack_bonk,
+	  effectOnTarget: MODE.ALWAYS,
+	  func: function(_user, _targets)
+	  {
+		var _damage = ceil(_user.strength + random_range(-_user.strength * 0.5, _user.strength * 0.25));
+		BattleChangeHP(_targets[0], -_damage, 0)
+	  }
+	  
+	},
+	
+	fire:
+	{
+	  name: "Fire",
+	  description: "{0} casts Fire!",
+	  subMenu: "Magic",
+	  mpCost: 5,
+	  targetRequired: true,
+	  targetEnemyByDefault: true,
+	  targetAll: MODE.NEVER,
+	  userAnimation : "cast",
+	  effectSprite : spr_magic_fire,
+	  effectOnTarget: MODE.ALWAYS,
+	  func: function(_user, _targets)
+	  {
+		var _damage = irandom_range(10,15);
+		BattleChangeHP(_targets[0], -_damage, 0)
+	  }
 	}
 	
 }
@@ -39,8 +77,8 @@ global.party =
 	  mp: 5,
 	  mpMax: 5,
 	  strength: 5,
-	  sprites: {idle: spr_player_right, attack: spr_player_attack, down: spr_player_down},
-	  actions : []
+	  sprites: {idle: spr_player_right, attack: spr_player_attack, cast: spr_player_attack, down: spr_player_down},
+	  actions : [global.actionLibrary.attack, global.actionLibrary.fire]
 		
 	}
 
@@ -57,7 +95,7 @@ global.enemies =
 	mpMax: 0,
 	strength: 2,
 	sprites: {idle: spr_slime, attack: spr_slime_attack},
-	actions: [global.actionLibrary.attack],
+	actions: [global.actionLibrary.slime_attack],
 	xpValue: 15,
 	AIscript: function()
 	{
