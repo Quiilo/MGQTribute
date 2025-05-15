@@ -3,7 +3,7 @@
   "%Name":"spr_player_right",
   "bboxMode":0,
   "bbox_bottom":18,
-  "bbox_left":2,
+  "bbox_left":1,
   "bbox_right":15,
   "bbox_top":0,
   "collisionKind":1,

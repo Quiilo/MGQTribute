@@ -1,21 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"obj_battle_unitsEnemy",
+  "%Name":"obj_battle_floating_text",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_battle_unitsEnemy",
+  "name":"obj_battle_floating_text",
   "overriddenProperties":[],
   "parent":{
     "name":"Battle",
     "path":"folders/Objects/Battle.yy",
   },
-  "parentObjectId":{
-    "name":"obj_battle_units",
-    "path":"objects/obj_battle_units/obj_battle_units.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
